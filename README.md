@@ -23,4 +23,4 @@
 
 ## Задачи
 
-- [Листок 01]()
+- [Листок 01](https://github.com/artamonoff/data-analysis-sgp/blob/main/exercises/list01-intro.pdf): pandas & визуализация
