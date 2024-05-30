@@ -7,3 +7,6 @@
 *.log
 *.fls
 *.fdb_latexmk
+jupyter-notebooks/Diamond.csv
+jupyter-notebooks/Labour.csv
+jupyter-notebooks/sleep75.csv
