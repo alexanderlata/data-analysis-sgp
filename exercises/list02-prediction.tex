@@ -1,0 +1,56 @@
+\documentclass[12pt]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T2A]{fontenc}
+\usepackage[english, russian]{babel}
+
+\usepackage{amsmath, amsfonts, amsthm, amssymb, amsopn, amscd}
+\usepackage{enumerate}
+\usepackage[mathscr]{eucal}
+
+\usepackage{hyperref}
+\hypersetup{unicode=true,final=true,colorlinks=true}
+
+\theoremstyle{remark}
+%\newtheorem{exercise}{Упражнение}
+\newtheorem{exercise}{}[section]
+\renewcommand{\theexercise}{\textbf{\#\arabic{exercise}}}
+
+\input{data-analysis-defs.tex}
+
+\title{Листок 02. Прогнозирование}
+
+\author{Н.В. Артамонов}
+
+\begin{document}
+
+\maketitle
+
+\tableofcontents
+
+\section{Линейная регрессия}
+
+\begin{exercise}
+Для набора данных \texttt{sleep75} рассмотрим линейную регрессию 
+\begin{center}
+	\textbf{sleep на totwrk, age, south, male, smsa, yngkid, marr}.
+\end{center}
+\begin{enumerate}
+	\item Подгоните модель и выведите коэффициенты подогнанной модели
+	\item Рассмотрим трёх людей с характеристиками
+	\begin{center}
+		\begin{tabular}{|l|l|l|l|l|l|l|}\hline
+			totwrk & age & south & male & smsa & yngkid & marr \\ \hline\hline
+			2150 & 37 & 0 & 1 & 1 & 0 & 1  \\
+			1950 & 28 & 1 & 1 & 0 & 1 & 0 \\  
+			2240 & 26 & 0 & 0 & 1 & 0 & 0 \\ \hline
+		\end{tabular}
+	\end{center}
+	\item На обучающей выборке вычислите метрики подгонки: \(R^2\), 
+	MSE, MAE, MAPE, RMSE
+\end{enumerate}
+\end{exercise}
+
+
+
+\end{document}
