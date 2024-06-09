@@ -16,6 +16,7 @@
 |[`pandas`](https://pandas.pydata.org)|Табличные данные|
 |[`numpy`](https://numpy.org)|Работа с массивами данных, преобразование данных|
 |[`statsmodels`](https://www.statsmodels.org/stable/index.html)|Регрессионный анализ|
+|[`scikit-learn`](https://scikit-learn.org/stable/index.html)|Методы машинного обучения|
 |[`scipy.stats`](https://docs.scipy.org/doc/scipy/reference/stats.html)|Статистические методы (распределения и проч)|
 |[`seaborn`](https://seaborn.pydata.org)|Визуализация статистических данных|
 |[`plotly`](https://plotly.com/python/)|Визуализация|
