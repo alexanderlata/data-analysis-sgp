@@ -46,6 +46,7 @@
 			2390 & 44 & 0 & 1 \\ \hline
 		\end{tabular}
 	\end{center}
+	вычислите прогноз \textbf{sleep} 
 	\item На обучающей выборке вычислите метрики подгонки: \(R^2\), 
 	MSE, MAE, MAPE, RMSE
 \end{enumerate}
@@ -67,6 +68,7 @@
 			2240 & 26 & 0 & 0 & 1 & 0 & 0 \\ \hline
 		\end{tabular}
 	\end{center}
+	вычислите прогноз \textbf{sleep} 
 	\item На обучающей выборке вычислите метрики подгонки: \(R^2\), 
 	MSE, MAE, MAPE, RMSE
 \end{enumerate}
@@ -81,13 +83,14 @@
 	\item Подгоните модель и выведите коэффициенты подогнанной модели
 	\item Рассмотрим трёх людей с характеристиками
 	\begin{center}
-			\begin{tabular}{|l|l|l|l|l|}\hline
-				age & IQ & south & married & urban \\ \hline\hline
-				36 & 105 & 1 & 1 & 1 \\
-				29 & 123 & 0 & 1 & 0 \\
-				25 & 112 & 1 & 0 & 1 \\ \hline
-			\end{tabular}
-		\end{center}
+		\begin{tabular}{|l|l|l|l|l|}\hline
+			age & IQ & south & married & urban \\ \hline\hline
+			36 & 105 & 1 & 1 & 1 \\
+			29 & 123 & 0 & 1 & 0 \\
+			25 & 112 & 1 & 0 & 1 \\ \hline
+		\end{tabular}
+	\end{center}
+	вычислите прогноз \textbf{wage} 
 	\item На обучающей выборке вычислите метрики подгонки: \(R^2\), 
 	MSE, MAE, MAPE, RMSE
 \end{enumerate}
@@ -102,18 +105,133 @@
 	\item Подгоните модель и выведите коэффициенты подогнанной модели
 	\item Рассмотрим трёх людей с характеристиками
 	\begin{center}
-			\begin{tabular}{|l|l|l|l|}\hline
-				exper & female & married & smsa \\ \hline\hline
-				5 & 1 & 1 & 1  \\
-				26 & 0 & 0 & 1 \\
-				38 & 1 & 1 & 0 \\ \hline
-			\end{tabular}
-		\end{center}
+		\begin{tabular}{|l|l|l|l|}\hline
+			exper & female & married & smsa \\ \hline\hline
+			5 & 1 & 1 & 1  \\
+			26 & 0 & 0 & 1 \\
+			38 & 1 & 1 & 0 \\ \hline
+		\end{tabular}
+	\end{center}
+	вычислите прогноз \textbf{wage}
+	\item На обучающей выборке вычислите метрики подгонки: \(R^2\), 
+	MSE, MAE, MAPE, RMSE
+\end{enumerate}
+\end{exercise}
+
+\begin{exercise}
+Для набора данных \texttt{Labour} рассмотрим линейную регрессию 
+\begin{center}
+	\textbf{output на capital, labour}.
+\end{center}
+\begin{enumerate}
+	\item Подгоните модель и выведите коэффициенты подогнанной модели
+	\item Рассмотрим три фирмы с характеристиками
+	\begin{center}
+		\begin{tabular}{|l|l|}\hline
+			capital & labour \\ \hline\hline
+			2.970 & 85 \\
+			10.450 & 60  \\
+			3.850 & 105 \\ \hline
+		\end{tabular}
+	\end{center}
+	вычислите прогноз \textbf{output}
+	\item На обучающей выборке вычислите метрики подгонки: \(R^2\), 
+	MSE, MAE, MAPE, RMSE
+\end{enumerate}
+\end{exercise}
+
+\begin{exercise}
+Для набора данных \texttt{Labour} рассмотрим линейную регрессию 
+\begin{center}
+	\textbf{log(output) на log(capital), log(labour)}.
+\end{center}
+\begin{enumerate}
+	\item Подгоните модель и выведите коэффициенты подогнанной модели
+	\item Рассмотрим три фирмы с характеристиками
+	\begin{center}
+		\begin{tabular}{|l|l|}\hline
+			capital & labour \\ \hline\hline
+			2.970 & 85 \\
+			10.450 & 60  \\
+			3.850 & 105 \\ \hline
+		\end{tabular}
+	\end{center}
+	вычислите прогноз \textbf{output}
+	\item На обучающей выборке вычислите метрики подгонки: \(R^2\), 
+	MSE, MAE, MAPE, RMSE
+\end{enumerate}
+\end{exercise}
+
+\begin{exercise}
+Для набора данных \texttt{Labour} рассмотрим линейную регрессию 
+\begin{center}
+	\textbf{output на capital, labour, wage}.
+\end{center}
+\begin{enumerate}
+	\item Подгоните модель и выведите коэффициенты подогнанной модели
+	\item Рассмотрим три фирмы с характеристиками
+	\begin{center}
+		\begin{tabular}{|l|l|l|}\hline
+			capital & labour & wage \\ \hline\hline
+			2.970 & 85 & 36.98\\
+			10.450 & 60 & 33.82  \\
+			3.850 & 105 & 40.23\\ \hline
+		\end{tabular}
+	\end{center}
+	вычислите прогноз \textbf{output}
+	\item На обучающей выборке вычислите метрики подгонки: \(R^2\), 
+	MSE, MAE, MAPE, RMSE
+\end{enumerate}
+\end{exercise}
+
+\begin{exercise}
+Для набора данных \texttt{Labour} рассмотрим линейную регрессию 
+\begin{center}
+	\textbf{log(output) на log(capital), log(labour), log(wage)}.
+\end{center}
+\begin{enumerate}
+	\item Подгоните модель и выведите коэффициенты подогнанной модели
+	\item Рассмотрим три фирмы с характеристиками
+	\begin{center}
+		\begin{tabular}{|l|l|l|}\hline
+			capital & labour & wage \\ \hline\hline
+			2.970 & 85 & 36.98\\
+			10.450 & 60 & 33.82  \\
+			3.850 & 105 & 40.23\\ \hline
+		\end{tabular}
+	\end{center}
+	вычислите прогноз \textbf{output} для каждой
 	\item На обучающей выборке вычислите метрики подгонки: \(R^2\), 
 	MSE, MAE, MAPE, RMSE
 \end{enumerate}
 \end{exercise}
 
 \section{k-NN}
+
+\begin{exercise}
+Для набора данных \texttt{sleep75} рассмотрим задачу прогнозирования
+\textbf{sleep} (переменная таргета) и помощь предикторов
+\textbf{totwrk, age, south, male}
+\begin{enumerate}
+	\item подгоните модель k-NN с
+	\begin{itemize}
+		\item \(k=5\)
+		\item \(k=10\)
+	\end{itemize}
+	на исходном датасете
+	\item Рассмотрим трёх людей с характеристиками
+	\begin{center}
+		\begin{tabular}{|l|l|l|l|}\hline
+			totwrk & age & south & male \\ \hline\hline
+			2160 & 32 & 1 & 0 \\
+			1720 & 24 & 0 & 1 \\
+			2390 & 44 & 0 & 1 \\ \hline
+		\end{tabular}
+	\end{center}
+	вычислите прогноз \textbf{sleep} по каждой модели
+\end{enumerate}
+\end{exercise}
+
+\section{Валидация модели}
 
 \end{document}
