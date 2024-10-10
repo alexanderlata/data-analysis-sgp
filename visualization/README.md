@@ -58,6 +58,31 @@
 
 **Замечание**: интерфейс для построение графиков в `matplotlib`
 
-`plt.legend()`
+название рисунка `plt.title()`
 
-`plt.show()`
+добавить легенду `plt.legend()`
+
+отобразить рисунок `plt.show()`
+
+## Библиотека Plotly
+
+`import plotly.express as px`
+
+|График|Метод|Ссылка|
+|-|-|-|
+|2d диаграмма рассеяния с регрессией|`.scatter()`|[ссылка](https://plotly.com/python/line-and-scatter)|
+|линейная диаграмма|`.line()`|[ссылка](https://plotly.com/python/line-and-scatter)|
+|гистограмма|`.histogram()`|[ссылка](https://plotly.com/python/histograms/)|
+|столбчатая диаграмма|`.bar()`|[ссылка](https://plotly.com/python/bar-charts/)|
+|коробчатая диаграмма|`.box()`|[ссылка](https://plotly.com/python/box-plots/)|
+|круговая|`.pie()`|[ссылка](https://plotly.com/python/pie-charts/)|
+|температурная карта|`.imshow()`|[ссылка](https://plotly.com/python/heatmaps/)|
+|3d диаграмма рассеяния|`.scatter_3d()`|[ссылка](https://plotly.com/python/line-and-scatter)|
+
+**Замечание**: интерфейс для построение графиков в `plotly`
+
+`fig = px.method()`
+
+`# fig.update_layout()`
+
+`fig.show()`
