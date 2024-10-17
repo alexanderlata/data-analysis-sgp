@@ -28,7 +28,8 @@
 
 % \tableofcontents
 
-
+\textbf{Замечание} \textit{обязательно проводим предварительную обработку данных:
+удаление пропущенных значений, нормировку, преобразование категориальных признаков}
 
 \begin{exercise}
 Для набора данных \texttt{countries} проведите разбиение на кластеры следующими
@@ -49,6 +50,62 @@
 
 \begin{exercise}
 Для набора данных \texttt{countries} найдите <<оптимальное>> число кластеров
+для метода
+\begin{enumerate}
+	\item k-средних
+	\item иерархической кластеризации
+\end{enumerate}
+относительно метрик: Silhouette, Calinski-Harabasz, Davies-Bouldin
+\end{exercise}
+
+\begin{exercise}
+Из набора данных \texttt{countries} возьмите переменные 
+\texttt{sleep, totwrk, age, educ} и проведите разбиение на кластеры следующими
+методам:
+\begin{center}
+	\begin{tabular}{c|l}
+		Число кластеров & Метод \\ \hline
+		3 & k-средних \\
+		4 & k-средних \\
+		5 & k-средних \\
+		3 & иерархическая \\
+		4 & иерархическая \\
+		5 & иерархическая \\ \hline
+	\end{tabular}
+\end{center}
+Визуализируйте разбиение на кластеры на диаграмме рассеяния в переменных датасета
+\end{exercise}
+	
+\begin{exercise}
+Из набора данных \texttt{countries} возьмите переменные 
+\texttt{sleep, totwrk, age, educ} и найдите <<оптимальное>> число кластеров
+для метода
+\begin{enumerate}
+	\item k-средних
+	\item иерархической кластеризации
+\end{enumerate}
+относительно метрик: Silhouette, Calinski-Harabasz, Davies-Bouldin
+\end{exercise}
+
+\begin{exercise}
+Для набора данных \texttt{Labour} проведите разбиение на кластеры следующими
+методам:
+\begin{center}
+	\begin{tabular}{c|l}
+		Число кластеров & Метод \\ \hline
+		3 & k-средних \\
+		4 & k-средних \\
+		5 & k-средних \\
+		3 & иерархическая \\
+		4 & иерархическая \\
+		5 & иерархическая \\ \hline
+	\end{tabular}
+\end{center}
+Визуализируйте разбиение на кластеры на диаграмме рассеяния в переменных датасета
+\end{exercise}
+	
+\begin{exercise}
+Для набора данных \texttt{Labour} найдите <<оптимальное>> число кластеров
 для метода
 \begin{enumerate}
 	\item k-средних
