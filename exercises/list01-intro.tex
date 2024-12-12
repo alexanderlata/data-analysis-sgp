@@ -31,6 +31,11 @@
 \section{Pandas}
 
 \begin{exercise}
+Загрузите датасет \texttt{countries}. Вычислите описательные статистики 
+для каждой переменной.
+\end{exercise}
+
+\begin{exercise}
 Загрузите датасет \texttt{sleep75}.
 \begin{enumerate}
 	\item вычислите размер датасета (число наблюдений \& число переменных)
@@ -54,8 +59,8 @@
 			mean & & & & \\ \hline
 			median & & & & \\ \hline
 			st.dev & & & & \\ \hline
-			var (unbiased) & & & & \\ \hline
-			var (biased) & & & & \\ \hline
+			var & & & & \\ \hline
+			% var (biased) & & & & \\ \hline
 			1st quartile & & & & \\ \hline
 			3rd quartile & & & & \\ \hline
 		\end{tabular}
@@ -99,8 +104,8 @@
 			mean & & & &  & \\ \hline
 			median & & & & & \\ \hline
 			st.dev & & & & & \\ \hline
-			var (unbiased) & & & & & \\ \hline
-			var (biased) & & & & & \\ \hline
+			var & & & & & \\ \hline
+			% var (biased) & & & & & \\ \hline
 			1st quartile & & & & & \\ \hline
 			3rd quartile & & & & & \\ \hline
 		\end{tabular}
@@ -142,8 +147,8 @@
 			mean & & & & & & \\ \hline
 			median & & & & & & \\ \hline
 			st.dev & & & & & & \\ \hline
-			var (unbiased) & & & & & & \\ \hline
-			var (biased) & & & & & & \\ \hline
+			var & & & & & & \\ \hline
+			% var (biased) & & & & & & \\ \hline
 			1st quartile & & & & & & \\ \hline
 			3rd quartile & & & & & & \\ \hline
 		\end{tabular}
@@ -193,7 +198,7 @@
 \begin{exercise}
 Загрузите датасет \texttt{Labour}.
 \begin{enumerate}
-	\item нарисуйте гистограммы для переменных output, capital, labour, wage
+	\item нарисуйте гистограммы для каждой переменной
 	\item нарисуйте гистограммы для log-переменных output, capital, labour, wage
 	\item нарисуйте диаграммы рассеяния output vs других переменных
 	\item нарисуйте диаграммы рассеяния log(output) vs log других переменных
@@ -236,15 +241,25 @@
 \begin{enumerate}
 	\item нарисуйте гистограммы для переменных price, carat
 	\item нарисуйте гистограммы для log-переменных price, carat
-	\item нарисуйте гистограмму с накопление для price относительно certification
-	\item нарисуйте гистограмму с накопление для carat относительно clarity 
-	\item нарисуйте гистограмму с накопление для log(price) относительно colour
-	\item нарисуйте гистограмму с накопление для log(carat) относительно colour
+	\item нарисуйте гистограмму для price с группировкой относительно переменной certification
+	\item нарисуйте гистограмму для carat с накопление относительно clarity 
+	\item нарисуйте гистограмму для log(price) с накопление  относительно colour
+	\item нарисуйте гистограмму для log(carat) с накопление относительно colour
 	\item нарисуйте диаграмму рассеяния price vs carat
 	\item нарисуйте диаграмму рассеяния log-price vs log-carat
 	\item нарисуйте диаграмму рассеяния log-price vs log-carat с группировкой по certification
 	\item нарисуйте диаграмму рассеяния log-price vs log-carat с группировкой по colour
 	\item нарисуйте диаграмму рассеяния log-price vs log-carat с группировкой по clarity
+\end{enumerate}
+\end{exercise}
+
+\begin{exercise}
+Загрузите датасет \texttt{countries}.
+\begin{enumerate}
+	\item Постройте гистограммы для всех переменных
+	\item Постройте диаграмму рассеяния Население vs ВВП д/н
+	\item Постройте диаграмму рассеяния ИРЧП vs ВВП д/н
+	\item Постройте диаграмму рассеяния Безработица vs ВВП д/н
 \end{enumerate}
 \end{exercise}
 

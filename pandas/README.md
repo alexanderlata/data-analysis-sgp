@@ -1,6 +1,6 @@
 # Основы Pandas
 
-Библиотека  [`pandas`](https://pandas.pydata.org) позволяет работать с **датафреймами** (фреймы данных)
+Библиотека [`pandas`](https://pandas.pydata.org) позволяет работать с **датафреймами** (фреймы данных)
 
 [DataFrame](https://pandas.pydata.org/docs/getting_started/intro_tutorials/01_table_oriented.html)  - это таблица (2-мерная структура данных), которая используется для хранения данных различных типов  (включая строки, целые числа, значения с плавающей запятой, категориальные данные и многое другое) по столбцам.
 
@@ -24,8 +24,6 @@
 
 **Важное замечание**: *строки и столбцы индексируются с нуля!*
 
-
-
 ## Подключение библиотеки в Python
 
 `import pandas as pd`
@@ -37,10 +35,16 @@
 |`.read_csv('Filename.csv', sep=',', decimal='.')`|Импорт данных из файла CSV|
 |`.read_excel('Filename.xlsx', sheet_name=0, header=0)`|Импорт данных из файла MS Excel|
 |`.DataFrame(data, index=None, columns=None)`|создание нового датафрейма (data – объект numpy, словарь, ...)|
-|`.concat(objs, axis=0`| слияние датафреймов вдоль оси axis|
+|`.concat(objs, axis=0)`| слияние датафреймов вдоль оси axis|
 |`.get_dummies(data, prefix=None, prefix_sep='_', columns=None)`|преобразовать категориальных переменных в дамми|
 
 ## Основные свойства и методы pandas.DataFrame
+
+**Замечание** 
+- большинство методов возвращает датафрейм
+- В скобках указаны значения аргументов по умолчанию
+
+### Основные свойства
 
 |Свойства|Описание|
 |-|-|
@@ -52,29 +56,41 @@
 |`.iloc[]`|выбрать строки/столбцы по номерам|
 |`.loc[]`|выбрать столбы по названиям|
 
+### Описательные статистики для числовых переменных/наблюдений
 
 |Метод|Описание|
 |-|-|
-|`.head(n=5)`|первые n наблюдений|
-|`.tail(n=5)`|последние n наблюдений|
-|`.round(decimals=0)`| округление|
 |`.describe(percentiles=None, include=None, exclude=None)`|описательные статистик по переменным|
-|`.corr(method='pearson', numeric_only=False)`| корреляционная матрица|
 |`.min(axis=0, skipna=True, numeric_only=False)`| минимум вдоль оси axis|
 |`.max(axis=0, skipna=True, numeric_only=False)`| максимум вдоль оси axis|
 |`.sum(axis=0, skipna=True, numeric_only=False)`| сумма вдоль оси axis|
 |`.mean(axis=0, skipna=True, numeric_only=False)`| среднее вдоль оси axis|
 |`.median(axis=0, skipna=True, numeric_only=False)`|медиана вдоль оси axis|
-|`.count()`| число наблюдения по каждому столбцу|
+|`.var(axis=0, ddof=1, numeric_only=False)`| выборочная дисперсия|
+|`.var(axis=0, ddof=1, numeric_only=False)`| (выборочное) стандартное отклонение|
+|`.count(axis=0, numeric_only=False)`| число наблюдения по каждому столбцу|
+|`.corr(method='pearson', numeric_only=False)`| корреляционная матрица|
+
+### Описательные статистики для категориальных переменных
+
+|Метод|Описание|
+|-|-|
 |`.value_counts(subset=None, dropna=True)`| частота различных значений в столбцах `subset`|
+
+### Другие методы
+
+|Метод|Описание|
+|-|-|
+|`.info()`|Информация по переменным|
+|`.head(n=5)`|первые n наблюдений|
+|`.tail(n=5)`|последние n наблюдений|
+|`.round(decimals=0)`| округление|
 |`.isna()`| обнаружение пропущенных значений|
 |`.dropna(axis=0)`| удалить строки (axis=0)/столбцы(axis=1) с пропущенными наблюдениями|
 |`.drop(index=None, columns=None)`| удалить строки/столбцы (по названиям)|
 |`.plot()`|базовая визуализация|
 |`.to_csv('Filenale,csv', sep=',', decimal='.')`| экспорт в файл CSV|
 |`.to_excel('Filenale.xlsx', sheet_name='Sheet1',header=True, index=True)`| экспорт в файл MS Excel|
-
-**Замечание** большинство методов возвращает датафрейм
 
 ## Манипуляция с данными
 
